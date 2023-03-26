@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Main {
     class Solution {
         public int minReorder(int n, int[][] connections) {
