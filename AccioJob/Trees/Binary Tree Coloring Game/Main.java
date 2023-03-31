@@ -68,7 +68,7 @@ class Main {
 			Solution tree = new Solution();
 			boolean ans = tree.btreeGameWinningMove(root,n,x);
 			System.out.print(ans);
-		
+            sc.close();
 	}
 }
 
