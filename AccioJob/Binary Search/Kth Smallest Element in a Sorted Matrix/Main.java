@@ -3,7 +3,7 @@
 import java.util.*;
 
 class Solution{
-	public static int kthSmallest(int[][] matrix, int k) {
+	public int kthSmallest(int[][] matrix, int k) {
          int n = matrix.length;
         int l = matrix[0][0]; 
         int h = matrix[n-1][n-1];
@@ -44,16 +44,17 @@ class Solution{
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[][] mat = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++)
-                mat[i][j] = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)){
+            int n = sc.nextInt();
+            int[][] mat = new int[n][n];
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++)
+                    mat[i][j] = sc.nextInt();
+            }
+        
+            Solution obj=new Solution();
+            System.out.println(obj.kthSmallest(mat, sc.nextInt()));
         }
-        Solution obj=new Solution();
-        System.out.println(obj.kthSmallest(mat, sc.nextInt()));
-        sc.close();
     }
 
 }

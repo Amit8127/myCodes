@@ -49,13 +49,13 @@ class Solution {
 
 public class Main {
     public static void main(String args[]) {
-        Scanner input = new Scanner(System.in);
-        int n = input.nextInt(), m = input.nextInt();
-        int[] arr;
-        arr = new int[n];
-        for (int i = 0; i < n; i++)
-            arr[i] = input.nextInt();
-        System.out.println(Solution.solve(n, m, arr));
-        input.close();
+        try (Scanner input = new Scanner(System.in)){
+            int n = input.nextInt(), m = input.nextInt();
+            int[] arr;
+            arr = new int[n];
+            for (int i = 0; i < n; i++)
+                arr[i] = input.nextInt();
+            System.out.println(Solution.solve(n, m, arr));
+        }
     }
 }
