@@ -1,6 +1,6 @@
+// https://course.acciojob.com/idle?question=09b7009d-eb26-4479-a937-ab55d1e0d784
+
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
 class Solution {
 
